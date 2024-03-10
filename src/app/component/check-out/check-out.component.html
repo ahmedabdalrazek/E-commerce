@@ -1,0 +1,22 @@
+<section class="">
+  <div class="container bg-main-light p-4 rounded-3 my-5 shadow ">
+    <div class="row">
+      <h2 class="text-capitalize">Online Payment</h2>
+   <form [formGroup]="checkout" (ngSubmit)="handle()">
+    <div>
+      <label for="details">Details :</label>
+      <textarea class="form-control" id="details"  formControlName="details"></textarea>
+    </div>
+    <div>
+      <label for="phone">Phone :</label>
+      <input type="tel" formControlName="phone" class="form-control" id="phone">
+    </div>
+    <div>
+      <label for="city">city :</label>
+      <input type="text" formControlName="city" class="form-control" id="city">
+    </div>
+     <button class=" btn-main mt-3 text-capitalize">check Out</button>
+  </form>
+    </div>
+  </div>
+</section>
